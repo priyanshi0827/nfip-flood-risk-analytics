@@ -1,0 +1,24 @@
+nonpayment_reason,claims,pct_of_denied,avg_assessed_damage,states_seen
+Not an actual flood,44982,23.47,844.0,55
+Claim below deductible,44901,23.43,2140.0,54
+Erroneous assignment,34649,18.08,1732.0,55
+Other,25032,13.06,10892.0,55
+No demonstrable damage,24756,12.92,1800.0,54
+Error - delete claim (no assignment),8011,4.18,24416.0,54
+Failure to pursue claim,5207,2.72,7336.0,53
+"Not insured, wind damage",793,0.41,443.0,27
+Loss in progress,764,0.4,10028.0,35
+Sea wall,679,0.35,79.0,44
+Seepage,536,0.28,885.0,43
+Boat piers,299,0.16,795.0,25
+"Not insured, damage before policy inception",271,0.14,13867.0,39
+Backup of drains,217,0.11,1.0,33
+Fence damage,201,0.1,347.0,31
+Erosion type outside flood definition,118,0.06,13.0,25
+Shrubs not covered,97,0.05,753.0,29
+Fire,34,0.02,1072.0,13
+Drainage clogged,34,0.02,0.0,18
+Landslide,22,0.01,600.0,10
+Hydrostatic pressure,19,0.01,,13
+Debris removal only,11,0.01,1847.0,9
+Mudflow type outside flood definition,9,0.0,16569.0,7

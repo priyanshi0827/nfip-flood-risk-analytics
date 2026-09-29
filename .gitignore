@@ -1,0 +1,21 @@
+# Raw data - far too large for git, and re-downloadable in one command.
+# Claims is ~156MB, policies ~3.5GB.
+data/*.parquet
+data/*.duckdb
+data/*.duckdb.wal
+data/*.wal
+data/*.part
+data/duckdb_tmp/
+
+# Results ARE committed deliberately. They are small (a few hundred rows each)
+# and they make the repo self-demonstrating: anyone can see the findings and
+# the EDA report without downloading 3.5GB first. Do not ignore these.
+# outputs/*.csv
+# outputs/*.md
+# outputs/figures/
+
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store

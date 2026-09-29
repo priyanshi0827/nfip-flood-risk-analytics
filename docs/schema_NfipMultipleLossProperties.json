@@ -1,0 +1,192 @@
+{
+  "dataset": "NfipMultipleLossProperties",
+  "version": 1,
+  "recordCount": 240651,
+  "lastRefresh": "2026-08-04T22:40:36.263Z",
+  "distribution": [
+    {
+      "format": "csv",
+      "accessURL": "https://www.fema.gov/api/open/v1/NfipMultipleLossProperties.csv",
+      "datasetSize": "small (10MB - 50MB)"
+    },
+    {
+      "format": "json",
+      "accessURL": "https://www.fema.gov/api/open/v1/NfipMultipleLossProperties.json",
+      "datasetSize": "small (10MB - 50MB)"
+    },
+    {
+      "format": "jsona",
+      "accessURL": "https://www.fema.gov/api/open/v1/NfipMultipleLossProperties.jsona",
+      "datasetSize": "small (10MB - 50MB)"
+    },
+    {
+      "format": "parquet",
+      "accessURL": "https://www.fema.gov/api/open/v1/NfipMultipleLossProperties.parquet",
+      "datasetSize": "tiny (< 10MB)"
+    }
+  ],
+  "fields": [
+    {
+      "name": "fipsCountyCode",
+      "title": "FIPS County Code",
+      "type": "text",
+      "description": "FIPS five-digit numeric code used to idenify counties and county equivalents in the United States, the District of Columbia, US territories, outlying areas of the US and freely associated states. The first two characters represent the state; the last three the county. As County information is not provided by flood insurance companies, this is derived from the geocoded address coordinate (where available) and subject to the error inherent in that process."
+    },
+    {
+      "name": "state",
+      "title": "State",
+      "type": "text",
+      "description": "The name or phrase describing the U.S. state, district, or territory."
+    },
+    {
+      "name": "stateAbbreviation",
+      "title": "State Abbreviation",
+      "type": "text",
+      "description": "Two letter abbreviation of the state (e.g., VA). Generally derived from the property address but geocoded location may be used in some cases."
+    },
+    {
+      "name": "county",
+      "title": "County",
+      "type": "text",
+      "description": "Full name of the county (e.g., Broward), followed by its type in parenthesis (e.g., county, parish, borough, etc). Derived from county_fips."
+    },
+    {
+      "name": "zipCode",
+      "title": "Zip Code",
+      "type": "text",
+      "description": "Zip code where the property is located as reported to us in the property address."
+    },
+    {
+      "name": "reportedCity",
+      "title": "Reported City",
+      "type": "text",
+      "description": "This is the city of the insured property as reported to us in the property address."
+    },
+    {
+      "name": "communityIdNumber",
+      "title": "NFIP Community ID Number",
+      "type": "text",
+      "description": "A unique identifier given to all communities in the National Flood Insurance Program (NFIP). It assists you in quickly identifying your community and associated flood risk information when using FEMA's management systems"
+    },
+    {
+      "name": "communityName",
+      "title": "NFIP Community Name",
+      "type": "text",
+      "description": "Name of the NFIP community, generally representing the lowest level of government with land use authority. Not every city or town is recognized as its own community with the NFIP. Each state or territory determines land use authority granted to counties/parishes/boroughs, towns/cities, tribal area, etc. within their own jurisdiction"
+    },
+    {
+      "name": "censusBlockGroup",
+      "title": "Census Block Group FIPS",
+      "type": "text",
+      "description": "Twelve digit code designating the 2020 Census Block Group. Typically, Block Groups have a population of 600 to 3,000 people. This is derived from the geocoded address coordinate (where available) and subject to the error inherent in that process."
+    },
+    {
+      "name": "nfipRl",
+      "title": "NFIP RL",
+      "type": "boolean",
+      "description": "National Flood Insurance Program insurance-relaled Repetitive Loss. An NFIP-insured structure with two or more claims/losses resulting in claim payments (including building and contents) totaling more than $1000 per claim that are recorded in any 10-year period. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. When mitigated, this value may change from true to false"
+    },
+    {
+      "name": "nfipSrl",
+      "title": "NFIP SRL",
+      "type": "boolean",
+      "description": "National Flood Insurance Program insurance-related Severe Repetitive Loss. An NFIP-Insured structure that has incurred flood-related damage for which four or more separate claims payments have been made, with the amount of each claim (including building and contents payments) exceeding $5,000, and with the cumulative amount of such claims payments exceeding $20,000; or for which at least two separate claims payments (building payments only) have been made under such coverage, with the cumulative amount of such claims exceeding the market value of the building. In both instances, at least two of the claims must be within 10 years of each other, and claims made within 10 days of each other will be counted as one claim. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. When mitigated, this value may change from true to false."
+    },
+    {
+      "name": "fmaRl",
+      "title": "FMA RL",
+      "type": "boolean",
+      "description": "Flood Mitigation Assistance (grant-related) Repetitive Loss. An NFIP-insured structure that has incurred flood-related damage on 2 occasions, in which the cost of repair, on the average, equaled or exceeded 25 percent of the value of the structure at the time of each such flood event. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'."
+    },
+    {
+      "name": "fmaSrl",
+      "title": "FMA SRL",
+      "type": "boolean",
+      "description": "Flood Mitigation Assistance (grant-related) Severe Repetitive Loss. An NFIP-Insured structure that has incurred flood-related damage for which four or more separate claims payments have been made, with the amount of each claim (including building and contents payments) exceeding $5,000, and with the cumulative amount of such claims payments exceeding $20,000; or for which at least two separate claims payments (building payments only) have been made under such coverage, with the cumulative amount of such claims exceeding the market value of the building. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'."
+    },
+    {
+      "name": "asOfDate",
+      "title": "As of Date",
+      "type": "date",
+      "description": "The effective date of the data in the file. When time is not specified in the field, it will default to T00:00:00.000Z"
+    },
+    {
+      "name": "floodZone",
+      "title": "Flood Zone",
+      "type": "text",
+      "description": "NFIP Flood Zone - Flood zone derived from the Flood Insurance Rate Map (FIRM) used to rate the insured property.\n\nA - Special Flood with no Base Flood Elevation on FIRM; \nAE, A1-A30 - Special Flood with Base Flood Elevation on FIRM; \nA99 - Special Flood with Protection Zone; \nAH, AHB* - Special Flood with Shallow Ponding; \nAO, AOB* - Special Flood with Sheet Flow; \nX, B - Moderate Flood from primary water source.  Pockets of areas subject to drainage problems; \nX, C - Minimal Flood from primary water source.  Pockets of areas subject to drainage problems; \nD - Possible Flood; \nV - Velocity Flood with no Base Flood Elevation on FIRM; \nVE, V1-V30 - Velocity Flood with Base Flood Elevation on FIRM; \nAE, VE, X - New zone designations used on new maps starting January 1, 1986, in lieu of A1-A30, V1-V30, and B and C; \nAR - A Special Flood Hazard Area that results from the decertification of a previously accredited flood protection system that is determined to be in the process of being restored to provide base flood protection;\nAR Dual Zones    - (AR/AE, AR/A1-A30, AR/AH, AR/AO, AR/A) Areas subject to flooding from failure of the flood protection system (Zone AR) which also overlap an existing Special Flood Hazard Area as a dual zone; \n\n*AHB, AOB, ARE, ARH, ARO, and ARA are not risk zones shown on a map, but are acceptable values for rating purposes"
+    },
+    {
+      "name": "latitude",
+      "title": "Latitude",
+      "type": "decimal(9,1)",
+      "description": "Approximate latitude of the structure redacted to 1 decimal place. The precision has been lessened to ensure individual privacy. This redaction as well as the inherent error in geocoding addresses may result in a point location that exists in an incorrect community, county or state."
+    },
+    {
+      "name": "longitude",
+      "title": "Longitude",
+      "type": "decimal(9,1)",
+      "description": "Approximate longitude of the structure redacted to 1 decimal place. The precision has been lessened to ensure individual privacy. This redaction as well as the inherent error in geocoding addresses may result in a point location that exists in an incorrect community, county or state."
+    },
+    {
+      "name": "occupancyType",
+      "title": "Occupancy Type",
+      "type": "smallint",
+      "description": "Code indicating the use and occupancy type of the insured structure. One-digit code: 1 = Single family residence; 2 = 2 to 4 Unit residential building; 3 = Residential building with more than 4 units; 4 = Non-residential building; 6 = Non-Residential Business; 11 = Single-family residential building with the exception of a mobile home or a single residential unit within a multi unit building; 12 = A residential non-condo building with 2, 3, or 4  units seeking insurance on all units; 13 = A residential non-condo building with 5 or more units seeking insurance on all units; 14 = Residential mobile/manufactured home; 15 = Residential condo association seeking coverage on a building with one or more units; 16 = Single residential unit within a multi-unit building; 17 = Non-residential mobile/manufactured home; 18 = A non-residential building; 19 = A non-residential unit within a multi-unit building;"
+    },
+    {
+      "name": "originalConstructionDate",
+      "title": "Original Construction Date",
+      "type": "date",
+      "description": "The original date of the construction of the building. When time is not specified in the field, it will default to T00:00:00.000Z"
+    },
+    {
+      "name": "originalNBDate",
+      "title": "Original NB Date",
+      "type": "date",
+      "description": "The original date of the flood policy (new business). When time is not specified in the field, it will default to T00:00:00.000Z"
+    },
+    {
+      "name": "postFIRMConstructionIndicator",
+      "title": "Post FIRM Construction Indicator",
+      "type": "boolean",
+      "description": "Yes (Y) or No (N) Indicator on whether construction was started before or after publication of the FIRM. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'. For insurance rating purposes, buildings for which the start of construction or substantial improvement was after December 31, 1974, or on or after the effective date of the initial FIRM for the community, whichever is later, are considered Post-FIRM construction"
+    },
+    {
+      "name": "primaryResidenceIndicator",
+      "title": "Primary Residence Indicator",
+      "type": "boolean",
+      "description": "Indicates whether or not the insured building/condominium unit is the primary residence of the insured. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'.\nA single-family dwelling/condominium unit qualifies as the primary residence of the insured provided that, at the time of loss, the named insured or the named insured's spouse has lived in the dwelling for either (1) 80 percent of the 365 days immediately preceding the loss, or (2) 80 percent of the period of ownership of the insured dwelling, if ownership is less than 365 days. \nEffective June 1, 2014, the NFIP defines primary residence to be a building that will be lived in by the insured or the insureds spouse for more than 50 percent of the 365 days following the policy effective date."
+    },
+    {
+      "name": "mitigatedIndicator",
+      "title": "Mitigated Indicator",
+      "type": "boolean",
+      "description": "Indicates whether a repetitive loss structure is currently mitigated per As of Date. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'."
+    },
+    {
+      "name": "insuredIndicator",
+      "title": "Insured Indicator",
+      "type": "boolean",
+      "description": "Indicates whether a repetitive loss structure is currently insured by the NFIP per the As of Date. Yes is indicated with either a 'true' or '1'. No is indicated with either a 'false' or '0'."
+    },
+    {
+      "name": "totalLosses",
+      "title": "Total Losses",
+      "type": "smallint",
+      "description": "The total number of paid NFIP claims of > $1,000 since 1978 for the repetitive loss structure. This number may be inflated based on incorrectly linked structures."
+    },
+    {
+      "name": "mostRecentDateofLoss",
+      "title": "Most Recent Date of Loss",
+      "type": "date",
+      "description": "The most recent date of loss for a closed NFIP claim for the structure."
+    },
+    {
+      "name": "id",
+      "title": "ID",
+      "type": "uuid",
+      "description": "Unique ID assigned to the record."
+    }
+  ]
+}
